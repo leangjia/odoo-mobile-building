@@ -1,139 +1,139 @@
 package com.haogefeifei.odoo.api.entity.product;
 
-import java.util.List;
-
 import com.haogefeifei.odoo.api.entity.core.Company;
 import com.haogefeifei.odoo.api.entity.core.Partner;
 import com.haogefeifei.odoo.api.entity.pricelist.PartnerInfo;
 
+import java.util.List;
+
 public class SupplierInfo {
-	private Integer id;
-	private Partner partner;
-	private String productName;
-	private String productCode;
-	private Integer sequence;
-	private UnitOfMeasure productUnitOfMeasure;
-	private Float minimalQuantity;
-	private Product product;
-	private Integer delay;
-	private List<PartnerInfo> pricelists;
-	private Company company;
-	
-	public SupplierInfo(){
-		
-	}
+    private Integer id;
+    private Partner partner;
+    private String productName;
+    private String productCode;
+    private Integer sequence;
+    private UnitOfMeasure productUnitOfMeasure;
+    private Float minimalQuantity;
+    private Product product;
+    private Integer delay;
+    private List<PartnerInfo> pricelists;
+    private Company company;
 
-	public SupplierInfo(
-		Integer id, 
-		Partner partner, 
-		String productName,
-		String productCode, 
-		Integer sequence,
-		UnitOfMeasure productUnitOfMeasure, 
-		Float minimalQuantity,
-		Product product, 
-		Integer delay, 
-		List<PartnerInfo> pricelists,
-		Company company
-	) {
-		this.id = id;
-		this.partner = partner;
-		this.productName = productName;
-		this.productCode = productCode;
-		this.sequence = sequence;
-		this.productUnitOfMeasure = productUnitOfMeasure;
-		this.minimalQuantity = minimalQuantity;
-		this.product = product;
-		this.delay = delay;
-		this.pricelists = pricelists;
-		this.company = company;
-	}
+    public SupplierInfo() {
 
-	public Integer getId() {
-		return id;
-	}
+    }
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    public SupplierInfo(
+            Integer id,
+            Partner partner,
+            String productName,
+            String productCode,
+            Integer sequence,
+            UnitOfMeasure productUnitOfMeasure,
+            Float minimalQuantity,
+            Product product,
+            Integer delay,
+            List<PartnerInfo> pricelists,
+            Company company
+    ) {
+        this.id = id;
+        this.partner = partner;
+        this.productName = productName;
+        this.productCode = productCode;
+        this.sequence = sequence;
+        this.productUnitOfMeasure = productUnitOfMeasure;
+        this.minimalQuantity = minimalQuantity;
+        this.product = product;
+        this.delay = delay;
+        this.pricelists = pricelists;
+        this.company = company;
+    }
 
-	public Partner getPartner() {
-		return partner;
-	}
+    public Integer getId() {
+        return id;
+    }
 
-	public void setPartner(Partner partner) {
-		this.partner = partner;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public String getProductName() {
-		return productName;
-	}
+    public Partner getPartner() {
+        return partner;
+    }
 
-	public void setProductName(String productName) {
-		this.productName = productName;
-	}
+    public void setPartner(Partner partner) {
+        this.partner = partner;
+    }
 
-	public String getProductCode() {
-		return productCode;
-	}
+    public String getProductName() {
+        return productName;
+    }
 
-	public void setProductCode(String productCode) {
-		this.productCode = productCode;
-	}
+    public void setProductName(String productName) {
+        this.productName = productName;
+    }
 
-	public Integer getSequence() {
-		return sequence;
-	}
+    public String getProductCode() {
+        return productCode;
+    }
 
-	public void setSequence(Integer sequence) {
-		this.sequence = sequence;
-	}
+    public void setProductCode(String productCode) {
+        this.productCode = productCode;
+    }
 
-	public UnitOfMeasure getProductUnitOfMeasure() {
-		return productUnitOfMeasure;
-	}
+    public Integer getSequence() {
+        return sequence;
+    }
 
-	public void setProductUnitOfMeasure(UnitOfMeasure productUnitOfMeasure) {
-		this.productUnitOfMeasure = productUnitOfMeasure;
-	}
+    public void setSequence(Integer sequence) {
+        this.sequence = sequence;
+    }
 
-	public Float getMinimalQuantity() {
-		return minimalQuantity;
-	}
+    public UnitOfMeasure getProductUnitOfMeasure() {
+        return productUnitOfMeasure;
+    }
 
-	public void setMinimalQuantity(Float minimalQuantity) {
-		this.minimalQuantity = minimalQuantity;
-	}
+    public void setProductUnitOfMeasure(UnitOfMeasure productUnitOfMeasure) {
+        this.productUnitOfMeasure = productUnitOfMeasure;
+    }
 
-	public Product getProduct() {
-		return product;
-	}
+    public Float getMinimalQuantity() {
+        return minimalQuantity;
+    }
 
-	public void setProduct(Product product) {
-		this.product = product;
-	}
+    public void setMinimalQuantity(Float minimalQuantity) {
+        this.minimalQuantity = minimalQuantity;
+    }
 
-	public Integer getDelay() {
-		return delay;
-	}
+    public Product getProduct() {
+        return product;
+    }
 
-	public void setDelay(Integer delay) {
-		this.delay = delay;
-	}
+    public void setProduct(Product product) {
+        this.product = product;
+    }
 
-	public List<PartnerInfo> getPricelists() {
-		return pricelists;
-	}
+    public Integer getDelay() {
+        return delay;
+    }
 
-	public void setPricelists(List<PartnerInfo> pricelists) {
-		this.pricelists = pricelists;
-	}
+    public void setDelay(Integer delay) {
+        this.delay = delay;
+    }
 
-	public Company getCompany() {
-		return company;
-	}
+    public List<PartnerInfo> getPricelists() {
+        return pricelists;
+    }
 
-	public void setCompany(Company company) {
-		this.company = company;
-	}
+    public void setPricelists(List<PartnerInfo> pricelists) {
+        this.pricelists = pricelists;
+    }
+
+    public Company getCompany() {
+        return company;
+    }
+
+    public void setCompany(Company company) {
+        this.company = company;
+    }
 }

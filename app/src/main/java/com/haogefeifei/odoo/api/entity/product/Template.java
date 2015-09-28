@@ -3,249 +3,252 @@ package com.haogefeifei.odoo.api.entity.product;
 import com.haogefeifei.odoo.api.entity.core.Company;
 
 public class Template {
-	
-	public enum Type {consu, server}
-	public enum CostMethod{standard, average}
-	public enum State{draft, sellable, end, obsolete}
-	public enum MeasureType{fixed, variable}
-	
-	private Integer id;
-	private String name;
-	private String description;
-	private String descriptionPurchase;
-	private String descriptionSale;
-	private Type type;
-	private Category category;
-	private Double listPrice;
-	private Double standardPrice;
-	private Double volume;
-	private Double weight;
-	private Double weightNet;
-	private CostMethod costMethod;
-	private Double warranty;
-	private Boolean saleOk;
-	private State state;
-	private UnitOfMeasure unitOfMeasure;
-	private UnitOfMeasure unitOfMeasurePurchase;
-	private Double unitOfSaleCoefficient;
-	private MeasureType measureType;
-	private Company company;
-	
-	public Template(){
-		
-	}
 
-	public Template(
-		Integer id,
-		String name, 
-		String description,
-		String descriptionPurchase, 
-		String descriptionSale, 
-		Type type,
-		Category category, 
-		Double listPrice, 
-		Double standardPrice,
-		Double volume, 
-		Double weight, 
-		Double weightNet, 
-		CostMethod costMethod,
-		Double warranty, 
-		Boolean saleOk, 
-		State state,
-		UnitOfMeasure unitOfMeasure,
-		UnitOfMeasure unitOfMeasurePurchase,
-		Double unitOfSaleCoefficient,
-		MeasureType measureType, 
-		Company company
-	) {
-		this.id = id;
-		this.name = name;
-		this.description = description;
-		this.descriptionPurchase = descriptionPurchase;
-		this.descriptionSale = descriptionSale;
-		this.type = type;
-		this.category = category;
-		this.listPrice = listPrice;
-		this.standardPrice = standardPrice;
-		this.volume = volume;
-		this.weight = weight;
-		this.weightNet = weightNet;
-		this.costMethod = costMethod;
-		this.warranty = warranty;
-		this.saleOk = saleOk;
-		this.state = state;
-		this.unitOfMeasure = unitOfMeasure;
-		this.unitOfMeasurePurchase = unitOfMeasurePurchase;
-		this.unitOfSaleCoefficient = unitOfSaleCoefficient;
-		this.measureType = measureType;
-		this.company = company;
-	}
+    public enum Type {consu, server}
 
-	public Integer getId() {
-		return id;
-	}
+    public enum CostMethod {standard, average}
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    public enum State {draft, sellable, end, obsolete}
 
-	public String getName() {
-		return name;
-	}
+    public enum MeasureType {fixed, variable}
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    private Integer id;
+    private String name;
+    private String description;
+    private String descriptionPurchase;
+    private String descriptionSale;
+    private Type type;
+    private Category category;
+    private Double listPrice;
+    private Double standardPrice;
+    private Double volume;
+    private Double weight;
+    private Double weightNet;
+    private CostMethod costMethod;
+    private Double warranty;
+    private Boolean saleOk;
+    private State state;
+    private UnitOfMeasure unitOfMeasure;
+    private UnitOfMeasure unitOfMeasurePurchase;
+    private Double unitOfSaleCoefficient;
+    private MeasureType measureType;
+    private Company company;
 
-	public String getDescription() {
-		return description;
-	}
+    public Template() {
 
-	public void setDescription(String description) {
-		this.description = description;
-	}
+    }
 
-	public String getDescriptionPurchase() {
-		return descriptionPurchase;
-	}
+    public Template(
+            Integer id,
+            String name,
+            String description,
+            String descriptionPurchase,
+            String descriptionSale,
+            Type type,
+            Category category,
+            Double listPrice,
+            Double standardPrice,
+            Double volume,
+            Double weight,
+            Double weightNet,
+            CostMethod costMethod,
+            Double warranty,
+            Boolean saleOk,
+            State state,
+            UnitOfMeasure unitOfMeasure,
+            UnitOfMeasure unitOfMeasurePurchase,
+            Double unitOfSaleCoefficient,
+            MeasureType measureType,
+            Company company
+    ) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.descriptionPurchase = descriptionPurchase;
+        this.descriptionSale = descriptionSale;
+        this.type = type;
+        this.category = category;
+        this.listPrice = listPrice;
+        this.standardPrice = standardPrice;
+        this.volume = volume;
+        this.weight = weight;
+        this.weightNet = weightNet;
+        this.costMethod = costMethod;
+        this.warranty = warranty;
+        this.saleOk = saleOk;
+        this.state = state;
+        this.unitOfMeasure = unitOfMeasure;
+        this.unitOfMeasurePurchase = unitOfMeasurePurchase;
+        this.unitOfSaleCoefficient = unitOfSaleCoefficient;
+        this.measureType = measureType;
+        this.company = company;
+    }
 
-	public void setDescriptionPurchase(String descriptionPurchase) {
-		this.descriptionPurchase = descriptionPurchase;
-	}
+    public Integer getId() {
+        return id;
+    }
 
-	public String getDescriptionSale() {
-		return descriptionSale;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public void setDescriptionSale(String descriptionSale) {
-		this.descriptionSale = descriptionSale;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public Type getType() {
-		return type;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public void setType(Type type) {
-		this.type = type;
-	}
+    public String getDescription() {
+        return description;
+    }
 
-	public Category getCategory() {
-		return category;
-	}
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
-	public void setCategory(Category category) {
-		this.category = category;
-	}
+    public String getDescriptionPurchase() {
+        return descriptionPurchase;
+    }
 
-	public Double getListPrice() {
-		return listPrice;
-	}
+    public void setDescriptionPurchase(String descriptionPurchase) {
+        this.descriptionPurchase = descriptionPurchase;
+    }
 
-	public void setListPrice(Double listPrice) {
-		this.listPrice = listPrice;
-	}
+    public String getDescriptionSale() {
+        return descriptionSale;
+    }
 
-	public Double getStandardPrice() {
-		return standardPrice;
-	}
+    public void setDescriptionSale(String descriptionSale) {
+        this.descriptionSale = descriptionSale;
+    }
 
-	public void setStandardPrice(Double standardPrice) {
-		this.standardPrice = standardPrice;
-	}
+    public Type getType() {
+        return type;
+    }
 
-	public Double getVolume() {
-		return volume;
-	}
+    public void setType(Type type) {
+        this.type = type;
+    }
 
-	public void setVolume(Double volume) {
-		this.volume = volume;
-	}
+    public Category getCategory() {
+        return category;
+    }
 
-	public Double getWeight() {
-		return weight;
-	}
+    public void setCategory(Category category) {
+        this.category = category;
+    }
 
-	public void setWeight(Double weight) {
-		this.weight = weight;
-	}
+    public Double getListPrice() {
+        return listPrice;
+    }
 
-	public Double getWeightNet() {
-		return weightNet;
-	}
+    public void setListPrice(Double listPrice) {
+        this.listPrice = listPrice;
+    }
 
-	public void setWeightNet(Double weightNet) {
-		this.weightNet = weightNet;
-	}
+    public Double getStandardPrice() {
+        return standardPrice;
+    }
 
-	public CostMethod getCostMethod() {
-		return costMethod;
-	}
+    public void setStandardPrice(Double standardPrice) {
+        this.standardPrice = standardPrice;
+    }
 
-	public void setCostMethod(CostMethod costMethod) {
-		this.costMethod = costMethod;
-	}
+    public Double getVolume() {
+        return volume;
+    }
 
-	public Double getWarranty() {
-		return warranty;
-	}
+    public void setVolume(Double volume) {
+        this.volume = volume;
+    }
 
-	public void setWarranty(Double warranty) {
-		this.warranty = warranty;
-	}
+    public Double getWeight() {
+        return weight;
+    }
 
-	public Boolean getSaleOk() {
-		return saleOk;
-	}
+    public void setWeight(Double weight) {
+        this.weight = weight;
+    }
 
-	public void setSaleOk(Boolean saleOk) {
-		this.saleOk = saleOk;
-	}
+    public Double getWeightNet() {
+        return weightNet;
+    }
 
-	public State getState() {
-		return state;
-	}
+    public void setWeightNet(Double weightNet) {
+        this.weightNet = weightNet;
+    }
 
-	public void setState(State state) {
-		this.state = state;
-	}
+    public CostMethod getCostMethod() {
+        return costMethod;
+    }
 
-	public UnitOfMeasure getUnitOfMeasure() {
-		return unitOfMeasure;
-	}
+    public void setCostMethod(CostMethod costMethod) {
+        this.costMethod = costMethod;
+    }
 
-	public void setUnitOfMeasure(UnitOfMeasure unitOfMeasure) {
-		this.unitOfMeasure = unitOfMeasure;
-	}
+    public Double getWarranty() {
+        return warranty;
+    }
 
-	public UnitOfMeasure getUnitOfMeasurePurchase() {
-		return unitOfMeasurePurchase;
-	}
+    public void setWarranty(Double warranty) {
+        this.warranty = warranty;
+    }
 
-	public void setUnitOfMeasurePurchase(UnitOfMeasure unitOfMeasurePurchase) {
-		this.unitOfMeasurePurchase = unitOfMeasurePurchase;
-	}
+    public Boolean getSaleOk() {
+        return saleOk;
+    }
 
-	public Double getUnitOfSaleCoefficient() {
-		return unitOfSaleCoefficient;
-	}
+    public void setSaleOk(Boolean saleOk) {
+        this.saleOk = saleOk;
+    }
 
-	public void setUnitOfSaleCoefficient(Double unitOfSaleCoefficient) {
-		this.unitOfSaleCoefficient = unitOfSaleCoefficient;
-	}
+    public State getState() {
+        return state;
+    }
 
-	public MeasureType getMeasureType() {
-		return measureType;
-	}
+    public void setState(State state) {
+        this.state = state;
+    }
 
-	public void setMeasureType(MeasureType measureType) {
-		this.measureType = measureType;
-	}
+    public UnitOfMeasure getUnitOfMeasure() {
+        return unitOfMeasure;
+    }
 
-	public Company getCompany() {
-		return company;
-	}
+    public void setUnitOfMeasure(UnitOfMeasure unitOfMeasure) {
+        this.unitOfMeasure = unitOfMeasure;
+    }
 
-	public void setCompany(Company company) {
-		this.company = company;
-	}
+    public UnitOfMeasure getUnitOfMeasurePurchase() {
+        return unitOfMeasurePurchase;
+    }
+
+    public void setUnitOfMeasurePurchase(UnitOfMeasure unitOfMeasurePurchase) {
+        this.unitOfMeasurePurchase = unitOfMeasurePurchase;
+    }
+
+    public Double getUnitOfSaleCoefficient() {
+        return unitOfSaleCoefficient;
+    }
+
+    public void setUnitOfSaleCoefficient(Double unitOfSaleCoefficient) {
+        this.unitOfSaleCoefficient = unitOfSaleCoefficient;
+    }
+
+    public MeasureType getMeasureType() {
+        return measureType;
+    }
+
+    public void setMeasureType(MeasureType measureType) {
+        this.measureType = measureType;
+    }
+
+    public Company getCompany() {
+        return company;
+    }
+
+    public void setCompany(Company company) {
+        this.company = company;
+    }
 }

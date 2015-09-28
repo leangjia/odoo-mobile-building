@@ -1,80 +1,80 @@
 package com.haogefeifei.odoo.api.entity.product;
 
 public class Category {
-	public enum Type{view, normal}
-	
-	private Integer id;
-	private String name;
-	private String completeName;
-	private Category parent;
-	private Integer sequence;
-	private Type type;
-	
-	public Category(){
-		
-	}
+    public enum Type {view, normal}
 
-	public Category(
-		Integer id, 
-		String name, 
-		String completeName,
-		Category parentId, 
-		Integer sequence, 
-		Type type
-	) {
-		this.id = id;
-		this.name = name;
-		this.completeName = completeName;
-		this.parent = parentId;
-		this.sequence = sequence;
-		this.type = type;
-	}
+    private Integer id;
+    private String name;
+    private String completeName;
+    private Category parent;
+    private Integer sequence;
+    private Type type;
 
-	public Integer getId() {
-		return id;
-	}
+    public Category() {
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    }
 
-	public String getName() {
-		return name;
-	}
+    public Category(
+            Integer id,
+            String name,
+            String completeName,
+            Category parentId,
+            Integer sequence,
+            Type type
+    ) {
+        this.id = id;
+        this.name = name;
+        this.completeName = completeName;
+        this.parent = parentId;
+        this.sequence = sequence;
+        this.type = type;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public Integer getId() {
+        return id;
+    }
 
-	public String getCompleteName() {
-		return completeName;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public void setCompleteName(String completeName) {
-		this.completeName = completeName;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public Category getParent() {
-		return parent;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public void setParent(Category parent) {
-		this.parent = parent;
-	}
+    public String getCompleteName() {
+        return completeName;
+    }
 
-	public Integer getSequence() {
-		return sequence;
-	}
+    public void setCompleteName(String completeName) {
+        this.completeName = completeName;
+    }
 
-	public void setSequence(Integer sequence) {
-		this.sequence = sequence;
-	}
+    public Category getParent() {
+        return parent;
+    }
 
-	public Type getType() {
-		return type;
-	}
+    public void setParent(Category parent) {
+        this.parent = parent;
+    }
 
-	public void setType(Type type) {
-		this.type = type;
-	}
+    public Integer getSequence() {
+        return sequence;
+    }
+
+    public void setSequence(Integer sequence) {
+        this.sequence = sequence;
+    }
+
+    public Type getType() {
+        return type;
+    }
+
+    public void setType(Type type) {
+        this.type = type;
+    }
 }

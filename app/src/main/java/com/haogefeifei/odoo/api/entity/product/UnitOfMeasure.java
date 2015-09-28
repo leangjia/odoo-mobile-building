@@ -1,91 +1,91 @@
 package com.haogefeifei.odoo.api.entity.product;
 
 public class UnitOfMeasure {
-	public enum Type{bigger, reference, smaller}
-	
-	private Integer id;
-	private String name;
-	private UnitOfMeasureCategory category;
-	private Double factor;
-	private Double rounding;
-	private Boolean active;
-	private Type type;
-	
-	public UnitOfMeasure(){
-		
-	}
+    public enum Type {bigger, reference, smaller}
 
-	public UnitOfMeasure(
-		Integer id, 
-		String name,
-		UnitOfMeasureCategory category, 
-		Double factor, 
-		Double rounding,
-		Boolean active, 
-		Type type
-	) {
-		this.id = id;
-		this.name = name;
-		this.category = category;
-		this.factor = factor;
-		this.rounding = rounding;
-		this.active = active;
-		this.type = type;
-	}
+    private Integer id;
+    private String name;
+    private UnitOfMeasureCategory category;
+    private Double factor;
+    private Double rounding;
+    private Boolean active;
+    private Type type;
 
-	public Integer getId() {
-		return id;
-	}
+    public UnitOfMeasure() {
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    }
 
-	public String getName() {
-		return name;
-	}
+    public UnitOfMeasure(
+            Integer id,
+            String name,
+            UnitOfMeasureCategory category,
+            Double factor,
+            Double rounding,
+            Boolean active,
+            Type type
+    ) {
+        this.id = id;
+        this.name = name;
+        this.category = category;
+        this.factor = factor;
+        this.rounding = rounding;
+        this.active = active;
+        this.type = type;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public Integer getId() {
+        return id;
+    }
 
-	public UnitOfMeasureCategory getCategory() {
-		return category;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public void setCategory(UnitOfMeasureCategory category) {
-		this.category = category;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public Double getFactor() {
-		return factor;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public void setFactor(Double factor) {
-		this.factor = factor;
-	}
+    public UnitOfMeasureCategory getCategory() {
+        return category;
+    }
 
-	public Double getRounding() {
-		return rounding;
-	}
+    public void setCategory(UnitOfMeasureCategory category) {
+        this.category = category;
+    }
 
-	public void setRounding(Double rounding) {
-		this.rounding = rounding;
-	}
+    public Double getFactor() {
+        return factor;
+    }
 
-	public Boolean getActive() {
-		return active;
-	}
+    public void setFactor(Double factor) {
+        this.factor = factor;
+    }
 
-	public void setActive(Boolean active) {
-		this.active = active;
-	}
+    public Double getRounding() {
+        return rounding;
+    }
 
-	public Type getType() {
-		return type;
-	}
+    public void setRounding(Double rounding) {
+        this.rounding = rounding;
+    }
 
-	public void setType(Type type) {
-		this.type = type;
-	}
+    public Boolean getActive() {
+        return active;
+    }
+
+    public void setActive(Boolean active) {
+        this.active = active;
+    }
+
+    public Type getType() {
+        return type;
+    }
+
+    public void setType(Type type) {
+        this.type = type;
+    }
 }

@@ -1,17 +1,17 @@
 package com.haogefeifei.odoo.api.core;
 
 public class OdooApiException extends RuntimeException {
-	private static final long serialVersionUID = -2254704279981443142L;
+    private static final long serialVersionUID = -2254704279981443142L;
 
-	public OdooApiException(String message) {
-		super(message);
-	}
+    public OdooApiException(String message) {
+        super(message);
+    }
 
-	public OdooApiException(Throwable cause) {
-		super(cause);
-	}
+    public OdooApiException(Throwable cause) {
+        super(cause);
+    }
 
-	public OdooApiException(String message, Throwable cause) {
-		super(message, cause);
-	}
+    public OdooApiException(String message, Throwable cause) {
+        super(message, cause);
+    }
 }
